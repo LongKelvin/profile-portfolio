@@ -23,6 +23,11 @@ jobs:
           submodules: true
           lfs: false
       
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
       
@@ -43,7 +48,7 @@ jobs:
           action: "upload"
           app_location: "./frontend"
           api_location: ""
-          output_location: "dist"  # Changed from "build" to "dist"
+          output_location: "dist"
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
@@ -57,10 +62,3 @@ jobs:
         with:
           action: "close"
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_WATER_0B3327200 }}
-```
-
-## Additional Note
-
-You also have a Node.js version warning:
-```
-You are using Node.js 18.20.8. Vite requires Node.js version 20.19+ or 22.12+.
