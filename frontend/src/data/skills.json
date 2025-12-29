@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "name": "Backend Development",
+      "icon": "server",
+      "skills": [
+        { "name": "C#", "level": "expert" },
+        { "name": ".NET", "level": "expert" },
+        { "name": "ASP.NET Core", "level": "advanced" },
+        { "name": "WPF", "level": "advanced" },
+        { "name": "Windows Forms", "level": "advanced" },
+        { "name": "RESTful APIs", "level": "advanced" },
+        { "name": "Java", "level": "intermediate" },
+        { "name": "C++", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Frontend Development",
+      "icon": "layout",
+      "skills": [
+        { "name": "React", "level": "intermediate" },
+        { "name": "TypeScript", "level": "intermediate" },
+        { "name": "JavaScript", "level": "intermediate" },
+        { "name": "HTML/CSS", "level": "advanced" },
+        { "name": "Tailwind CSS", "level": "intermediate" },
+        { "name": "Vite", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "icon": "code",
+      "skills": [
+        { "name": "Python", "level": "advanced" },
+        { "name": "Java", "level": "advanced" },
+        { "name": "C#", "level": "expert" },
+        { "name": "C++", "level": "intermediate" },
+        { "name": "TypeScript", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Music & Audio Programming",
+      "icon": "music",
+      "skills": [
+        { "name": "MIDI Protocol", "level": "advanced" },
+        { "name": "javax.sound.midi", "level": "advanced" },
+        { "name": "Audio Processing", "level": "intermediate" },
+        { "name": "Music Technology", "level": "advanced" }
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
+      "icon": "wrench",
+      "skills": [
+        { "name": "Git", "level": "expert" },
+        { "name": "GitHub", "level": "expert" },
+        { "name": "Visual Studio", "level": "expert" },
+        { "name": "VS Code", "level": "expert" },
+        { "name": "Android Development", "level": "intermediate" },
+        { "name": "Pygame", "level": "intermediate" }
+      ]
+    }
+  ]
+}

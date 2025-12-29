@@ -1,0 +1,107 @@
+[
+  {
+    "name": "EzMidiPiano",
+    "description": "An Android app that enables MIDI device connectivity and integrates with the javax.sound.midi API. Built for music enthusiasts and learners.",
+    "longDescription": "Mobile application that bridges the gap between digital music and traditional piano learning. Enables MIDI device connectivity on Android and provides real-time MIDI processing capabilities.",
+    "techStack": ["Java", "Android", "MIDI Protocol", "javax.sound.midi API"],
+    "features": [
+      "MIDI device connectivity on Android",
+      "Integration with javax.sound.midi API",
+      "Real-time MIDI input processing",
+      "Support for multiple MIDI devices",
+      "Music practice and learning tools"
+    ],
+    "github": "https://github.com/LongKelvin/EzMidiPiano",
+    "demo": null,
+    "image": "/images/ezmidipiano.jpg",
+    "highlights": [
+      "Android MIDI connectivity",
+      "Java-based implementation",
+      "1 fork on GitHub"
+    ]
+  },
+  {
+    "name": "VSCode JSON Unescape",
+    "description": "VS Code extension to convert escaped JSON strings into pretty, readable JSON and vice versa. A handy tool for developers working with JSON data.",
+    "longDescription": "Visual Studio Code extension that simplifies working with JSON strings by providing quick conversion between escaped and pretty-formatted JSON. Perfect for developers dealing with API responses and configuration files.",
+    "techStack": ["TypeScript", "VS Code Extension API", "Node.js"],
+    "features": [
+      "Convert escaped JSON to readable format",
+      "Convert pretty JSON back to escaped strings",
+      "Quick access via command palette",
+      "Simple and intuitive interface",
+      "Lightweight extension"
+    ],
+    "github": "https://github.com/LongKelvin/vscode-json-unescape",
+    "demo": null,
+    "image": "/images/vscode-extension.jpg",
+    "highlights": [
+      "Published VS Code extension",
+      "TypeScript implementation",
+      "Developer productivity tool"
+    ]
+  },
+  {
+    "name": "Gemini Chat CLI",
+    "description": "A simple and fun repository that allows users to have conversations with Gemini AI directly in the terminal window. Command-line interface for AI interactions.",
+    "longDescription": "Terminal-based chat application that integrates with Google's Gemini AI, providing a lightweight and efficient way to interact with AI directly from the command line.",
+    "techStack": ["Python", "Gemini API", "CLI"],
+    "features": [
+      "Direct terminal-based AI conversations",
+      "Integration with Gemini AI",
+      "Simple command-line interface",
+      "Lightweight and fast",
+      "Easy to use and set up"
+    ],
+    "github": "https://github.com/LongKelvin/gemini-chat-cli",
+    "demo": null,
+    "image": "/images/gemini-cli.jpg",
+    "highlights": [
+      "Python-based implementation",
+      "Terminal-friendly interface",
+      "AI integration project"
+    ]
+  },
+  {
+    "name": "Pygame Shooting Game",
+    "description": "A personal pygame project featuring a classic shooting game. Built with Python and Pygame for fun and learning game development.",
+    "longDescription": "Personal game development project using Pygame framework. Demonstrates game logic, sprite handling, collision detection, and interactive gameplay mechanics.",
+    "techStack": ["Python", "Pygame"],
+    "features": [
+      "Classic shooting game mechanics",
+      "Sprite-based graphics",
+      "Collision detection system",
+      "Score tracking",
+      "Interactive gameplay"
+    ],
+    "github": "https://github.com/LongKelvin/Pygame_ShootingGame",
+    "demo": null,
+    "image": "/images/pygame.jpg",
+    "highlights": [
+      "Game development project",
+      "Python and Pygame",
+      "Personal learning project"
+    ]
+  },
+  {
+    "name": "Portfolio Website",
+    "description": "This modern, responsive portfolio website showcasing my work and skills. Built with React and Tailwind CSS, featuring smooth animations and a clean, professional design.",
+    "longDescription": "A lightweight, performance-focused portfolio site demonstrating modern frontend development practices. Includes contact form integration with backend API.",
+    "techStack": ["React", "Vite", "Tailwind CSS", "Framer Motion", "ASP.NET Core API"],
+    "features": [
+      "Responsive design with Tailwind CSS",
+      "Smooth animations with Framer Motion",
+      "Contact form with validation",
+      "Fast load times with Vite",
+      "Modern UI/UX design"
+    ],
+    "github": "https://github.com/LongKelvin/profile-portfolio",
+    "demo": null,
+    "image": "/images/portfolio.jpg",
+    "highlights": [
+      "Modern React application",
+      "Professional design",
+      "Fully functional contact form"
+    ]
+  }
+]
