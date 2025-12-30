@@ -3,9 +3,28 @@ import { motion } from 'framer-motion';
 import { Briefcase, MapPin, Calendar } from 'lucide-react';
 import Card from '../ui/Card';
 import Timeline from '../ui/Timeline';
-import experienceData from '../../data/experience.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import Loading from '../ui/Loading';
 
 const Experience = () => {
+  const { data: experienceData, loading, error } = usePortfolioData('experience');
+
+  if (loading) {
+    return (
+      <section id="experience" className="py-20 bg-white flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
+
+  if (error || !experienceData) {
+    return (
+      <section id="experience" className="py-20 bg-white flex items-center justify-center">
+        <p className="text-red-600">Error loading experience</p>
+      </section>
+    );
+  }
+
   const experienceItems = experienceData.map((exp, index) => (
     <Card key={index} hover={false} className="max-w-2xl mx-auto">
       {/* Company & Role */}

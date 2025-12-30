@@ -1,0 +1,26 @@
+{
+  "name": "Kelvin Long",
+  "title": "Backend Software Engineer",
+  "subtitle": "C# .NET Developer | Desktop & Web Applications",
+  "summary": "Experienced C# .NET developer with a focus on Desktop and Web applications. Passionate about building scalable systems and exploring the intersection of technology and music programming.",
+  "avatar": "avartar.jpg",
+  "contact": {
+    "email": "klong101099@gmail.com",
+    "phone": "0372420570",
+    "location": "Ho Chi Minh City, Vietnam",
+    "github": "https://github.com/LongKelvin",
+    "linkedin": "https://longkelvin.github.io/"
+  },
+  "about": {
+    "intro": "I'm a software engineer with strong skills in C# and the .NET Framework. I mainly focus on backend development and Azure cloud services. I've worked on many projects, good in system design, migrating old legacy projects, and having a good understanding of software development principles.",
+    "focus": [
+      "3+ years of experience with C# .NET Framework",
+      "2+ years of experience with ASP.NET/ASP.NET Core",
+      "2+ years of experience with Microsoft SQL Server/PostgreSQL",
+      "1 year of experience with Azure application services",
+      "Expertise in WPF, WinUI, WinForm desktop applications",
+      "Good experience with Agile/SCRUM and CI/CD (Azure DevOps, GitHub Actions)"
+    ],
+    "interests": "I also have a big interest in music programming and have contributed to some open-source projects in this area. I love programming and I'm always eager to learn new things. I enjoy taking on new challenges and expanding my abilities. I love combining music and tech through programming, and enjoy reading/learning about music theory and music notation. 🎵"
+  }
+}

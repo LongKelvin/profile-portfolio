@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5130';
 
 class ApiService {
   async post(endpoint, data) {
@@ -45,6 +45,27 @@ class ApiService {
   // Health check
   async checkHealth() {
     return this.get('/health');
+  }
+
+  // Portfolio data endpoints
+  async getPersonalData() {
+    return this.get('/api/personal');
+  }
+
+  async getSkills() {
+    return this.get('/api/skills');
+  }
+
+  async getExperience() {
+    return this.get('/api/experience');
+  }
+
+  async getProjects() {
+    return this.get('/api/projects');
+  }
+
+  async getEducation() {
+    return this.get('/api/education');
   }
 }
 

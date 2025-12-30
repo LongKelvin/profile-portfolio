@@ -7,9 +7,10 @@ import Textarea from '../ui/Textarea';
 import Button from '../ui/Button';
 import Alert from '../ui/Alert';
 import Loading from '../ui/Loading';
-import personalData from '../../data/personal.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
 
 const Contact = () => {
+  const { data: personalData, loading: dataLoading } = usePortfolioData('personal');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,7 +90,7 @@ const Contact = () => {
     }
   };
 
-  const contactInfo = [
+  const contactInfo = personalData ? [
     {
       icon: Mail,
       label: 'Email',
@@ -113,7 +114,15 @@ const Contact = () => {
       value: 'longkelvin.github.io',
       href: personalData.contact.linkedin,
     },
-  ];
+  ] : [];
+
+  if (dataLoading) {
+    return (
+      <section id="contact" className="py-20 bg-white flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="py-20 bg-white">

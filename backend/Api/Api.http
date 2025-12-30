@@ -1,0 +1,49 @@
+@Api_HostAddress = http://localhost:5130
+
+### Health Check
+GET {{Api_HostAddress}}/health
+Accept: application/json
+
+###
+
+### Get Personal Data
+GET {{Api_HostAddress}}/api/personal
+Accept: application/json
+
+###
+
+### Get Skills
+GET {{Api_HostAddress}}/api/skills
+Accept: application/json
+
+###
+
+### Get Experience
+GET {{Api_HostAddress}}/api/experience
+Accept: application/json
+
+###
+
+### Get Projects
+GET {{Api_HostAddress}}/api/projects
+Accept: application/json
+
+###
+
+### Get Education
+GET {{Api_HostAddress}}/api/education
+Accept: application/json
+
+###
+
+### Contact Form
+POST {{Api_HostAddress}}/contact
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "message": "This is a test message from the contact form. I would like to discuss a potential project opportunity."
+}
+
+###

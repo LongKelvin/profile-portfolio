@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Cloud, Music } from 'lucide-react';
 import Card from '../ui/Card';
-import personalData from '../../data/personal.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import Loading from '../ui/Loading';
 import avatarImage from '../../assets/avartar.jpg';
 
 const About = () => {
+  const { data: personalData, loading, error } = usePortfolioData('personal');
+
   const highlights = [
     {
       icon: Code2,
@@ -23,6 +26,22 @@ const About = () => {
       description: 'Passionate about music programming and MIDI technology',
     },
   ];
+
+  if (loading) {
+    return (
+      <section id="about" className="py-20 bg-white flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
+
+  if (error || !personalData) {
+    return (
+      <section id="about" className="py-20 bg-white flex items-center justify-center">
+        <p className="text-red-600">Error loading data</p>
+      </section>
+    );
+  }
 
   return (
     <section id="about" className="py-20 bg-white">

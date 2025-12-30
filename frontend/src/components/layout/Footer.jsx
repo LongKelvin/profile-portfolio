@@ -1,10 +1,15 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
-import personalData from '../../data/personal.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
 
 const Footer = () => {
+  const { data: personalData } = usePortfolioData('personal');
   const currentYear = new Date().getFullYear();
+
+  if (!personalData) {
+    return null;
+  }
 
   const socialLinks = [
     { 

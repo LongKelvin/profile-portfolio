@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Server, Cloud, Layout, Database, Wrench, Code, Music } from 'lucide-react';
 import SkillBadge from '../ui/SkillBadge';
-import skillsData from '../../data/skills.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import Loading from '../ui/Loading';
 
 const iconMap = {
   server: Server,
@@ -15,6 +16,24 @@ const iconMap = {
 };
 
 const Skills = () => {
+  const { data: skillsData, loading, error } = usePortfolioData('skills');
+
+  if (loading) {
+    return (
+      <section id="skills" className="py-20 bg-gray-50 flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
+
+  if (error || !skillsData) {
+    return (
+      <section id="skills" className="py-20 bg-gray-50 flex items-center justify-center">
+        <p className="text-red-600">Error loading skills</p>
+      </section>
+    );
+  }
+
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

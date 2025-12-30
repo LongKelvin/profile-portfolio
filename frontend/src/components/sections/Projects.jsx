@@ -3,9 +3,28 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, Tag } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
-import projectsData from '../../data/projects.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import Loading from '../ui/Loading';
 
 const Projects = () => {
+  const { data: projectsData, loading, error } = usePortfolioData('projects');
+
+  if (loading) {
+    return (
+      <section id="projects" className="py-20 bg-gray-50 flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
+
+  if (error || !projectsData) {
+    return (
+      <section id="projects" className="py-20 bg-gray-50 flex items-center justify-center">
+        <p className="text-red-600">Error loading projects</p>
+      </section>
+    );
+  }
+
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

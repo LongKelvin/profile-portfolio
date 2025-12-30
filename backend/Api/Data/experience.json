@@ -1,0 +1,43 @@
+[
+  {
+    "company": "Bosch Global Software Technologies (BGSW)",
+    "role": "Software Developer",
+    "period": "Jan 2023 - Present",
+    "location": "Vietnam",
+    "description": "Software engineer focused on backend development and Azure cloud services, specializing in system design and migrating legacy projects.",
+    "achievements": [
+      "Skilled in C# .NET Framework for developing high-performance tools and desktop applications",
+      "Lead migration of legacy tools to modern frameworks (WPF, WinUI), ensuring improved functionality and efficiency",
+      "Architected services using WCF and WebAPI to enhance system connectivity",
+      "Contributed to open-source music programming projects, demonstrating a passion for innovative software solutions"
+    ],
+    "techStack": ["C#", ".NET Framework", "Azure", "WPF", "WinUI", "WCF", "WebAPI"]
+  },
+  {
+    "company": "NETCOMPANY VIETNAM",
+    "role": "Consultant (Fullstack Developer)",
+    "period": "Jan 2022 - Dec 2022",
+    "location": "Vietnam",
+    "description": "Full-stack consultant delivering high-quality web solutions for major enterprise projects.",
+    "achievements": [
+      "Contributed to a major enterprise project as a full-stack developer, ensuring end-to-end feature delivery",
+      "Developed responsive front-end interfaces using Angular",
+      "Built and optimized scalable backend services using ASP.NET Core",
+      "Achieved TOEIC LR: 800 and TOEIC SW: 320, demonstrating high professional English proficiency"
+    ],
+    "techStack": ["ASP.NET Core", "Angular", "C#", "TypeScript", "Enterprise Architecture"]
+  },
+  {
+    "company": "VIHAT TECHNOLOGY CO",
+    "role": ".Net Developer",
+    "period": "Jan 2021 - Jul 2021",
+    "location": "Vietnam",
+    "description": "Focused on web development using the .NET ecosystem and relational database management.",
+    "achievements": [
+      "Developed and maintained web applications utilizing ASP.NET MVC",
+      "Designed and optimized database schemas and queries using SQL Server",
+      "Applied software development principles to improve codebase maintainability and performance"
+    ],
+    "techStack": ["ASP.NET MVC", "SQL Server", "C#", ".NET"]
+  }
+]

@@ -2,10 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 import Button from '../ui/Button';
-import personalData from '../../data/personal.json';
+import { usePortfolioData } from '../../hooks/usePortfolioData';
+import Loading from '../ui/Loading';
 import avatarImage from '../../assets/avartar.jpg';
 
 const Hero = () => {
+  const { data: personalData, loading, error } = usePortfolioData('personal');
+
   const scrollToContact = () => {
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -13,6 +16,22 @@ const Hero = () => {
   const scrollToAbout = () => {
     document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  if (loading) {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center">
+        <Loading />
+      </section>
+    );
+  }
+
+  if (error || !personalData) {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center">
+        <p className="text-red-600">Error loading data. Please try again.</p>
+      </section>
+    );
+  }
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-blue-50 relative overflow-hidden">
